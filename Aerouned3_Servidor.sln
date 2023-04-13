@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{6A425B43-1524-4AC8-928F-DF4457CD5103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{DBC0DE33-C2E6-4829-A3E6-DA15CE78ECB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{2193CAE9-96DF-4CED-89EF-8C00B52C475E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A425B43-1524-4AC8-928F-DF4457CD5103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A425B43-1524-4AC8-928F-DF4457CD5103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A425B43-1524-4AC8-928F-DF4457CD5103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A425B43-1524-4AC8-928F-DF4457CD5103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC0DE33-C2E6-4829-A3E6-DA15CE78ECB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC0DE33-C2E6-4829-A3E6-DA15CE78ECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC0DE33-C2E6-4829-A3E6-DA15CE78ECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC0DE33-C2E6-4829-A3E6-DA15CE78ECB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2193CAE9-96DF-4CED-89EF-8C00B52C475E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2193CAE9-96DF-4CED-89EF-8C00B52C475E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2193CAE9-96DF-4CED-89EF-8C00B52C475E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2193CAE9-96DF-4CED-89EF-8C00B52C475E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC45CCC4-87A8-493E-987B-789D79A320A6}
+	EndGlobalSection
+EndGlobal

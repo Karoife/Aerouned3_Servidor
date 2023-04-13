@@ -1,0 +1,68 @@
+/* ============================================================*/
+/*   Database name:  AEROUNED                                   */
+/*   DBMS name:      Microsoft SQL Server 7.x                  */
+/*   Created on:     12/12/2022  07:00 PM                      */
+/*   Generada Por:   Tutor Marlon Dixon Gomez              */
+/* =========================================================== */
+USE MASTER
+go
+
+Create database AEROUNED
+  
+go
+
+USE [AEROUNED]
+GO
+
+/* Tabla Cliente */
+Create table Cliente(
+	identificacion varchar(12),
+	nombre varchar(40),
+	apellido1 varchar(40),
+	apellido2 varchar(40),
+	fec_nacimiento datetime,
+	genero char(1),
+	constraint pk_cliente primary key (identificacion)
+)
+/* Tabla Aeropuerto */
+Create table Aeropuerto(
+	codigo varchar (4),
+	nombre varchar (30),
+	pais varchar (20),
+	ciudad varchar (20),
+	telefono varchar (12),
+	estado bit,
+	constraint pk_aeropuerto primary key (codigo)
+)
+
+Create table Aerolinea(
+	id numeric (4,0),
+	nombre varchar (20),
+	telefono varchar (12),
+	estado bit,
+	constraint pk_aerolinea primary key (id)
+)
+
+Create table Vuelo (
+	numero numeric (4,0),
+	id_aerolinea numeric (4,0),
+	cod_origen  varchar (4),
+	cod_destino  varchar (4),
+	duracion datetime,
+	capacidad numeric(3,0),
+	constraint pk_vuelo primary key (numero),
+	constraint fk_vuelo01 foreign key (id_aerolinea) references aerolinea (id),
+	constraint fk_vuelo02 foreign key (cod_origen) references Aeropuerto (codigo),
+	constraint fk_vuelo03 foreign key (cod_destino) references Aeropuerto (codigo)
+)
+
+Create table Boleto(
+	numero numeric (4,0),
+	cod_vuelo numeric (4,0),
+	fec_compra datetime,
+	id_cliente varchar(12),
+	asientos numeric (2,0), 
+	constraint pk_boleto primary key (numero),
+	constraint fk_boleto01 foreign key (cod_vuelo) references Vuelo (numero),
+	constraint fk_boleto02 foreign key (id_cliente) references Cliente (identificacion),
+)
